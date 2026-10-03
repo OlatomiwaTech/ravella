@@ -2,7 +2,7 @@
 
 The website for Ravella Ultra Solution, a Nigerian organic wine and herbal wellness brand. It introduces the product and brand, shares information for prospective distributors, and helps customers get in touch or place an order.
 
-**Live website:** [ravellaultrasolution.com.ng](https://www.ravellaultrasolution.com.ng/home)
+
 
 ## Website
 
