@@ -73,7 +73,7 @@ function OpportunityBand() {
 }
 
 function ClosingBand() {
-  return <section className="closing-band"><div className="wrap closing-inner"><span className="closing-stamp"><Leaf size={25} /><span>GROW<br />TOGETHER</span></span><div><SectionLabel>YOUR NEXT CHAPTER CAN START SMALL</SectionLabel><h2>Start your wellness <em>& wealth journey.</em></h2></div><Button to="/contact" variant="gold">Let’s talk <ArrowRight size={15} /></Button></div></section>
+  return <section className="closing-band"><div className="wrap closing-inner"><span className="closing-stamp"><Leaf size={25} /><span>GROW<br />TOGETHER</span></span><div><SectionLabel>YOUR NEXT CHAPTER CAN START SMALL</SectionLabel><h2>Start your wellness <em>& wealth journey.</em></h2></div><Button to="/contact" variant="gold">Let’s talk</Button></div></section>
 }
 
 function Home({ onAdd }: { onAdd: () => void }) {
