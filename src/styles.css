@@ -12,3 +12,7 @@
 
 @media(max-width:900px){.page-head:has(img) .page-head-inner>div{width:calc(100% - 260px);max-width:calc(100% - 260px)}.page-head:has(img) h1{font-size:42px}}
 @media(max-width:680px){.page-head:has(img) .page-head-inner>div{width:82%;max-width:82%}.page-head:has(img) h1{font-size:43px}.page-head-inner>img{opacity:.18}}
+
+.product-visual>.bottle-image{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;mix-blend-mode:multiply;filter:none}
+.product-visual:after{content:'';position:absolute;inset:0;z-index:3;background:linear-gradient(transparent 75%,#17251e66);pointer-events:none}
+.product-visual .visual-caption{z-index:4;color:#fff;text-shadow:0 1px 4px #17251e}
