@@ -1,6 +1,6 @@
 import { useEffect, useState, type FormEvent, type ReactNode } from 'react'
 import { Link, NavLink, Route, Routes, useLocation } from 'react-router-dom'
-import { ArrowDown, ArrowRight, ArrowUpRight, Check, ChevronDown, CircleHelp, Clock3, Globe2, Heart, Leaf, Mail, Menu, MessageCircle, Minus, Package, Plus, ShieldCheck, ShoppingBag, Sparkles, Star, X } from 'lucide-react'
+import { ArrowDown, ArrowRight, ArrowUpRight, Check, CircleHelp, Clock3, Globe2, Heart, Leaf, Mail, Menu, MessageCircle, Minus, Package, Plus, ShieldCheck, ShoppingBag, Sparkles, Star, X } from 'lucide-react'
 
 const waPrimary = 'https://wa.me/2348075261937'
 const waSecondary = 'https://wa.me/2349127189648'
@@ -33,13 +33,13 @@ function Shell({ children }: { children: ReactNode }) {
   return <><SiteHeader />{children}<SiteFooter /></>
 }
 
-function PageHead({ eyebrow, title, text, image }: { eyebrow: string; title: string; text: string; image?: string }) {
+function PageHead({ eyebrow, title, text, image }: { eyebrow: string; title: ReactNode; text: string; image?: string }) {
   return <section className="page-head"><div className="wrap page-head-inner"><div><span className="eyebrow"><span />{eyebrow}</span><h1>{title}</h1><p>{text}</p></div>{image && <img src={image} alt="Ravella Organic Wine herbal drink bottle" />}</div></section>
 }
 
 function SectionLabel({ children, inverse = false }: { children: ReactNode; inverse?: boolean }) { return <span className={`eyebrow ${inverse ? 'eyebrow-inverse' : ''}`}><span />{children}</span> }
 
-function ImagePlaceholder({ src, alt, className = '' }: { src: string; alt: string; className?: string }) { return <img className={className} src={src} alt={alt} loading="lazy" /> }
+function ImagePlaceholder({ src, alt, className = '', loading = 'lazy' }: { src: string; alt: string; className?: string; loading?: 'eager' | 'lazy' }) { return <img className={className} src={src} alt={alt} loading={loading} /> }
 
 function Values() {
   const cards = [
