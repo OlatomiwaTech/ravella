@@ -4,7 +4,7 @@ import { ArrowDown, ArrowRight, ArrowUpRight, Check, CircleHelp, Clock3, Globe2,
 
 const waPrimary = 'https://wa.me/2348075261937'
 const waSecondary = 'https://wa.me/2349127189648'
-const bottle = 'https://lh7-us.googleusercontent.com/sitesv-images-rt/AMxu72uXixbRjZq0Q4-32q8e51RK4wFfetpcBE-VPHER1IFyV2EMfQuRSJi_I2OxdCRfc1ayBaujWvowkfzSSMs3l7Z3Mbo3xhJmqOD7YLrbgS-0XVFkri43QFaHo5l2TMctHKhlp4PgdQtMuwRmvPGz409DHldfINKWq2kHKRmNstKpPOWkWuK3Lt6QrQuxdUcEoRH29gNRUJphKxLVBhcQX070gNbJ9SIzbD2bhqYov2Y=w1280'
+const bottle = '/products.png'
 const nav = [{ to: '/', label: 'Home' }, { to: '/products', label: 'Our product' }, { to: '/about', label: 'Our story' }, { to: '/become-a-distributor', label: 'Opportunity' }, { to: '/contact', label: 'Contact' }]
 
 function Button({ children, to, href, variant = 'dark', onClick, className = '' }: { children: ReactNode; to?: string; href?: string; variant?: 'dark' | 'light' | 'outline' | 'gold'; onClick?: () => void; className?: string }) {
@@ -52,7 +52,7 @@ function Values() {
 }
 
 function ProductVisual({ compact = false }: { compact?: boolean }) {
-  return <div className={`product-visual ${compact ? 'product-visual-compact' : ''}`}><span className="visual-orbit orbit-one" /><span className="visual-orbit orbit-two" /><ImagePlaceholder className="bottle-image" src={bottle} alt="Ravella Ultra Solution Organic Wine bottle, 750 ml" /><div className="visual-caption"><span>THE DAILY RITUAL</span><span>750 ML · NON-ALCOHOLIC</span></div></div>
+  return <div className={`product-visual ${compact ? 'product-visual-compact' : ''}`}><span className="visual-orbit orbit-one" /><span className="visual-orbit orbit-two" /><ImagePlaceholder className="bottle-image" src={bottle} alt="Two 750 ml bottles of Ravella Ultra Solution Organic Wine" /><div className="visual-caption"><span>THE DAILY RITUAL</span><span>750 ML · NON-ALCOHOLIC</span></div></div>
 }
 
 function ProductSection({ onAdd }: { onAdd: () => void }) {
