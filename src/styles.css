@@ -16,3 +16,34 @@
 .product-visual>.bottle-image{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;mix-blend-mode:multiply;filter:none}
 .product-visual:after{content:'';position:absolute;inset:0;z-index:3;background:linear-gradient(transparent 75%,#17251e66);pointer-events:none}
 .product-visual .visual-caption{z-index:4;color:#fff;text-shadow:0 1px 4px #17251e}
+
+.hero-photo{height:auto;aspect-ratio:3/4}
+.hero-photo img{mix-blend-mode:normal;opacity:1}
+.product-visual{height:auto;min-height:0;aspect-ratio:4/5}
+.page-head-inner>img{object-fit:contain;mix-blend-mode:multiply}
+.story-image img{mix-blend-mode:normal}
+.delivery-information{background:#f5f4ee}
+.delivery-information-grid{display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:64px}
+.delivery-information-grid h2{font-family:var(--serif);font-size:clamp(32px,4vw,48px);font-weight:500;line-height:1.15;letter-spacing:-.04em;color:var(--forest);margin:17px 0}
+.delivery-information-grid h2 em{color:#ad8951}
+.delivery-information-grid>div>p,.delivery-checklist>p{font-size:12px;line-height:1.9;color:var(--muted)}
+.delivery-checklist{padding:25px;background:#fbfaf7;border:1px solid var(--line)}
+.delivery-checklist .button{margin-top:9px}
+.contact-info .small-note{line-height:1.8}
+.button{min-height:44px}
+.mobile-menu{min-width:44px;min-height:44px}
+:focus-visible{outline:3px solid #b2935d;outline-offset:3px}
+.contact-form input,.contact-form textarea,.contact-form select{font-size:14px}
+.quantity-row button{min-width:40px;min-height:40px}
+.drawer-head>button{min-width:44px;min-height:44px}
+
+@media(max-width:680px){
+  .delivery-information-grid{grid-template-columns:1fr;gap:20px}
+  .contact-form input,.contact-form textarea,.contact-form select{font-size:16px}
+  .hero-art{height:auto;min-height:0}
+  .hero-photo{width:min(79%,350px)}
+}
+
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
+}

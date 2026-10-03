@@ -14,7 +14,7 @@ The site is a responsive, client-rendered website with pages for:
 - Distributor opportunity
 - Contact
 
-Customers can use the order links on the website to contact Ravella on WhatsApp. The brand advertises delivery across Nigeria and to selected international destinations; confirm availability and shipping details with the team when ordering.
+Customers can prepare product and package enquiries on the website and send them to Ravella through WhatsApp. The brand advertises delivery across Nigeria and international enquiries for Cameroon, Ghana, Benin Republic, the USA, UK, Canada and other destinations. Confirm stock, current pricing, delivery cost and timing, payment methods, and return terms with Ravella before paying.
 
 ## Tech stack
 
@@ -56,13 +56,16 @@ Vite prints the local development URL in the terminal (typically `http://localho
 ├── index.html          # HTML entry point and page metadata
 ├── src/
 │   ├── App.tsx         # Site layout, pages, and components
-│   └── main.tsx        # React entry point and router setup
+│   ├── main.tsx        # React entry point and router setup
+│   └── styles.css      # Global and component styles
+├── public/
+│   └── products.png    # Ravella product photo
 ├── package.json        # Dependencies and npm scripts
 ├── postcss.config.js   # PostCSS configuration
 ├── tailwind.config.js  # Tailwind CSS configuration
 └── vite.config.ts      # Vite configuration
 ```
 
-## Contact form
+## Orders and contact
 
-The contact form currently handles submission in the browser only: it logs the submitted values to the developer console, resets the form, and displays a confirmation. It is not connected to an email service or backend, so submissions are not delivered to the Ravella team.
+Product, package and contact forms open a prefilled WhatsApp message to the order number linked from Ravella’s published website. The visitor reviews and sends the message in WhatsApp; the site does not process payments or confirm orders. The order list is held in browser memory and is cleared when the page reloads. Ravella must confirm availability, final pricing, delivery and payment details directly.
