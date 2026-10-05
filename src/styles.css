@@ -47,3 +47,6 @@
 @media(prefers-reduced-motion:reduce){
   *,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
 }
+
+.closing-band{background-color:#eeeee6;background-image:linear-gradient(90deg,#eeeee6 0%,#eeeee6 36%,rgba(238,238,230,.8) 58%,rgba(238,238,230,.36) 100%),url('/products.png');background-position:center,right 48%;background-size:cover,auto 220%;background-repeat:no-repeat}
+@media(max-width:680px){.closing-band{background-position:center,right 48%;background-size:cover,auto 175%}}
