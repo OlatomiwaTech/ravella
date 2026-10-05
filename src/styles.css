@@ -171,6 +171,20 @@ body{background:var(--cream);color:#28332b}
   .products-page .detail-info{padding:0}
 }
 
+.button{transition:background-color .22s ease,color .22s ease,border-color .22s ease,box-shadow .22s ease,transform .22s cubic-bezier(.2,.75,.25,1)}
+.button svg{transition:transform .22s cubic-bezier(.2,.75,.25,1)}
+.button:hover{transform:translateY(-2px);box-shadow:0 8px 18px #193a2b1c}
+.button:hover svg{transform:translateX(3px)}
+.button:active{transform:translateY(0) scale(.98);box-shadow:0 2px 6px #193a2b14}
+.button:active svg{transform:translateX(1px)}
+.mobile-menu,.bag-fab,.quantity-row button,.drawer-head>button,.faq-item>button,.text-action,.round-link{transition:color .2s ease,background-color .2s ease,border-color .2s ease,box-shadow .2s ease,transform .2s ease}
+.mobile-menu:active,.bag-fab:active,.quantity-row button:active,.drawer-head>button:active,.faq-item>button:active,.text-action:active,.round-link:active{transform:scale(.96)}
+@media(prefers-reduced-motion:reduce){
+  .button,.button svg,.mobile-menu,.bag-fab,.quantity-row button,.drawer-head>button,.faq-item>button,.text-action,.round-link{transition:none}
+  .button:hover,.button:active,.mobile-menu:active,.bag-fab:active,.quantity-row button:active,.drawer-head>button:active,.faq-item>button:active,.text-action:active,.round-link:active{transform:none}
+  .button:hover,.button:active{box-shadow:none}
+}
+
 .hero{background-image:linear-gradient(90deg,rgba(235,236,226,.99) 0%,rgba(235,236,226,.97) 36%,rgba(235,236,226,.9) 53%,rgba(235,236,226,.38) 100%),url('/products.png');background-position:center,center;background-size:cover,cover;background-repeat:no-repeat}
 .hero-inner{grid-template-columns:1fr}
 .hero-copy{max-width:690px}
