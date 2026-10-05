@@ -52,3 +52,7 @@
 .hero-inner{grid-template-columns:1fr}
 .hero-copy{max-width:690px}
 @media(max-width:680px){.hero{background-image:linear-gradient(180deg,rgba(235,236,226,.97),rgba(235,236,226,.88)),url('/products.png');background-position:center,center;background-size:cover,cover}.hero-inner{min-height:unset}}
+.product-section{background-color:#efeee7;background-image:linear-gradient(90deg,rgba(239,238,231,.99) 0%,rgba(239,238,231,.96) 42%,rgba(239,238,231,.82) 68%,rgba(239,238,231,.55) 100%),url('/products.png');background-position:center,center;background-size:cover,cover;background-repeat:no-repeat}
+.product-split{grid-template-columns:1fr}
+.product-copy{max-width:620px}
+@media(max-width:680px){.product-section{background-image:linear-gradient(180deg,rgba(239,238,231,.98),rgba(239,238,231,.9)),url('/products.png');background-position:center,center;background-size:cover,cover}}
