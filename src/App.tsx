@@ -98,7 +98,7 @@ const registrationPackages = [
 
 function Products({ onAdd }: { onAdd: () => void }) {
   useMeta('Our Product | Ravella Ultra Solution', 'Product details, listed ingredients and package prices for Ravella Ultra Solution Organic Wine. Contact Ravella to confirm current stock and delivery.')
-  return <Shell><main>
+  return <Shell><main className="products-page">
     <PageHead eyebrow="THE RAVELLA RITUAL" title={<>Meet Ravella <em>Organic Wine.</em></>} text="Explore the 750 ml herbal drink, listed ingredients and available package options. Confirm current stock and order details with the Ravella team." image={bottle} />
     <section className="product-detail section-pad"><div className="wrap detail-grid">
       <div className="detail-image"><ProductVisual /></div>

@@ -144,6 +144,33 @@ body{background:var(--cream);color:#28332b}
   .footer-main{padding-block:42px 30px}
 }
 
+.products-page .page-head{position:relative;overflow:hidden;background-color:#f0eee5;background-image:linear-gradient(90deg,rgba(240,238,229,.99) 0%,rgba(240,238,229,.97) 40%,rgba(240,238,229,.86) 59%,rgba(240,238,229,.2) 100%),url('/products.png');background-position:center,right 47%;background-size:cover,auto 185%;background-repeat:no-repeat;border-bottom:1px solid #dedccf}
+.products-page .page-head-inner{min-height:350px}
+.products-page .page-head-inner>div{position:relative;z-index:1;max-width:700px}
+.products-page .page-head-inner>img{display:none}
+.products-page .page-head h1{font-size:clamp(50px,6vw,76px);line-height:1.02}
+.products-page .page-head p{max-width:480px;color:#4e5a50;font-size:13px}
+.products-page .product-detail{background:linear-gradient(180deg,#faf8f1,#f4f2e9)}
+.products-page .detail-grid{align-items:start;gap:clamp(38px,6vw,82px)}
+.products-page .detail-image{position:sticky;top:110px}
+.products-page .detail-info{padding:12px 0}
+.products-page .detail-info h2{max-width:580px}
+.products-page .detail-info>.lead{max-width:600px;color:#566056}
+.products-page .ingredient-box,.products-page .official-packages{background:#fffdf8;border:1px solid #e3dfd3}
+.products-page .featured-package{box-shadow:inset 0 0 0 1px #b38d4e}
+@media(max-width:900px){
+  .products-page .detail-grid{gap:34px}
+  .products-page .detail-image{top:96px}
+}
+@media(max-width:680px){
+  .products-page .page-head{background-image:linear-gradient(180deg,rgba(240,238,229,.98) 0%,rgba(240,238,229,.94) 58%,rgba(240,238,229,.76) 100%),url('/products.png');background-position:center,right 48%;background-size:cover,auto 125%}
+  .products-page .page-head-inner{min-height:300px}
+  .products-page .page-head h1{font-size:clamp(42px,11vw,57px)}
+  .products-page .page-head p{max-width:350px}
+  .products-page .detail-image{position:static}
+  .products-page .detail-info{padding:0}
+}
+
 .hero{background-image:linear-gradient(90deg,rgba(235,236,226,.99) 0%,rgba(235,236,226,.97) 36%,rgba(235,236,226,.9) 53%,rgba(235,236,226,.38) 100%),url('/products.png');background-position:center,center;background-size:cover,cover;background-repeat:no-repeat}
 .hero-inner{grid-template-columns:1fr}
 .hero-copy{max-width:690px}
